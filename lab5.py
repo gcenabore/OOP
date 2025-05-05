@@ -9,21 +9,21 @@ class Animal:
     def describe(self):
         print(f"Animal named {self.name}, and Age: {self.age}")
 
-def Lion(Animal):
+class Lion(Animal):
     def make_sound(self):
         print("RAWR RAWR RAW!!!")
     
     def roar(self):
         print("ROARS Loudly.")
 
-def Bird(Animal):
+class Bird(Animal):
     def make_sound(self):
         print("CHIRP CHIRP CHIRP!!!")
     
     def fly(self):
         self("Flies high in the sky")
 
-def Reptile(Animal):
+class Reptile(Animal):
     def make_sound(self):
         print("Hiss HIss HIss!!")
     
