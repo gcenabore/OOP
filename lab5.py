@@ -7,7 +7,7 @@ class Animal:
         print("Animal's sound.")
     
     def describe(self):
-        print(f"Animal named {self.name}, and Age: {self.age}")
+        print(f"{self.__class__.__name__} named {self.name}, Age: {self.age}")
 
 class Lion(Animal):
     def make_sound(self):
@@ -16,12 +16,14 @@ class Lion(Animal):
     def roar(self):
         print("ROARS Loudly.")
 
+
 class Bird(Animal):
     def make_sound(self):
         print("CHIRP CHIRP CHIRP!!!")
     
     def fly(self):
-        self("Flies high in the sky")
+        print("Flies high in the sky")
+
 
 class Reptile(Animal):
     def make_sound(self):
@@ -30,16 +32,17 @@ class Reptile(Animal):
     def crawl(self):
         print("crawls silently, gumagapang skibidi.")
 
+
 def main(): 
-    lion = Lion("Leonellicactuselli", 10)
-    bird = Bird("Bombombinigoosini", 5)
-    reptile = Reptile("Bocanco", 2)
+    lion = Lion("Leonelli cactuselli", 10)
+    bird = Bird("Bombombini goosini", 5)
+    reptile = Reptile("El Bocanco Del Serpos", 2)
 
     for animal in [lion, bird, reptile]:
         animal.describe()
         animal.make_sound()
         print()
-    
+
     lion.roar()
     bird.fly()
     reptile.crawl()
