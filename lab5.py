@@ -30,3 +30,8 @@ def Reptile(Animal):
     def crawl(self):
         print("crawls silently, gumagapang skibidi.")
 
+def main():
+    lion = Lion("Leonelli Cactuselli", 10)
+    bird = Bird("Bombombini goosini", 5)
+    reptile = Reptile("El Bocanco Del Serpos", 2)
+
